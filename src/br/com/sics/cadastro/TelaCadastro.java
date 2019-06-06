@@ -118,7 +118,9 @@ public class TelaCadastro extends javax.swing.JFrame {
         int ran = rnd.nextInt(999999);
         
         String cod = txNomeOfc.getText();
-        String fl = cod.substring(0,1);
+        // variavel fl => first letter (Pega a primeira letra para o código)
+        String fl = cod.substring(0,1); 
+        // variavel ll => last letter (Pega última letra para o código)
         String ll = cod.substring(3,4);
         
         String res = fl + ll + "-" + Integer.toString(ran);
